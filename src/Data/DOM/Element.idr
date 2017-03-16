@@ -8,6 +8,6 @@ import IdrisScript
 data Element : Type where
   NewElement : Ptr -> Element
 
-getById : String -> JS_IO Element
-getById id = map NewElement $
+getElementById : String -> JS_IO Element
+getElementById id = map NewElement $
     jscall "document.getElementById(%0)" (String -> JS_IO Ptr) id
