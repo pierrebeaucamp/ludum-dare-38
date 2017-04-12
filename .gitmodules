@@ -1,3 +1,6 @@
 [submodule "lib/idrisscript"]
 	path = lib/idrisscript
 	url = https://github.com/idris-hackers/IdrisScript.git
+[submodule "lib/idris-web"]
+	path = lib/idris-web
+	url = git@github.com:blau-io/idris-web.git
