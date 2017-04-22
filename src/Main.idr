@@ -24,6 +24,8 @@ step scene = requestFrame scene step' where
 
 main : JS_IO ()
 main = case !defaultWindow of
-            Nothing       => log "Couldn't get default window Object"
-            (Just window) => step $ Init window
+  Nothing       => log "Couldn't get default window Object"
+  (Just window) => case !(initMainSceneWith window) of
+    Nothing      => log "Couldn't init main scene"
+    (Just scene) => step scene
 

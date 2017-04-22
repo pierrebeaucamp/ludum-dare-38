@@ -1,11 +1,10 @@
 default: repl
 
 build:
-	idris -p idrisscript -p dom -p html -p console -i src \
-		--codegen javascript src/Main.idr -o app.js
+	idris -p idrisscript -p dom -p html -p console -p webgl -i src \
+	    --codegen javascript src/Main.idr -o app.js
 
 install:
-	git submodule update --init --recursive; \
 	cd lib/idris-dom;                        \
 	  cd lib/idris-html;                     \
 	    cd lib/idris-hrTime;                 \
@@ -26,7 +25,7 @@ install:
 	cd -
 
 repl:
-	idris -p idrisscript -p dom -p html -p console -i src
+	idris -p idrisscript -p dom -p html -p console -p webgl -i src
 
 run:
 	make build && make server
