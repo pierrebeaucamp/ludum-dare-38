@@ -15,30 +15,30 @@ import Interfaces
 
 %access public export
 
-record MainScene where
+record Scene where
   constructor Init
   window : Window
   context : RenderingContext
 
-FrameRequest MainScene where
+FrameRequest Scene where
   requestFrame scene callback =
     requestAnimationFrame (window scene) callback >>= discardInt where
       discardInt : Maybe Int -> JS_IO ()
       discardInt n = pure ()
 
-Updatable MainScene where
+Updatable Scene where
   update scene = paint scene >>= \x => log "test" >>= \x => pure scene where
-    getContext : MainScene -> WebGLRenderingContext
+    getContext : Scene -> WebGLRenderingContext
     getContext scene = case (context scene) of
                             (FromWebGLRenderingContext ctx) => ctx
 
-    paint : MainScene -> JS_IO ()
+    paint : Scene -> JS_IO ()
     paint scene = clearColor (getContext scene) 1 0 0 1 >>= \x =>
                   clear (getContext scene) COLOR_BUFFER_BIT
 
 export
-initMainSceneWith : Window -> JS_IO $ Maybe MainScene
-initMainSceneWith window = case !context of
+initSceneWith : Window -> JS_IO $ Maybe Scene
+initSceneWith window = case !context of
     Nothing                 => pure Nothing
     (Just renderingContext) => pure $ Just $ Init window renderingContext
   where

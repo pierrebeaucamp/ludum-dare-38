@@ -317,14 +317,14 @@ var _idris_Prelude_46_Basics_46_id = function(oldbase){
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith$0 = function(oldbase,myoldbase){
+var _idris_Scenes_46_Main_46_initSceneWith$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
   i$valstack[i$valstack_base + 5] = new i$CON(65891,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65891,null);
   i$ret = new i$CON(65892,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65892,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith = function(oldbase){
+var _idris_Scenes_46_Main_46_initSceneWith = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 5;
   i$valstack[i$valstack_base + 1] = undefined;
@@ -334,8 +334,8 @@ var _idris_Scenes_46_Main_46_initMainSceneWith = function(oldbase){
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 1;
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_context_58_0,[myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_context_58_0,[myoldbase]);
 }
 var _idris_io_95_bind$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 7] = i$ret;
@@ -1883,7 +1883,7 @@ var _idris__123_APPLY0_125_$65864 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 1];
   i$SLIDE(3);
   i$valstack_top = i$valstack_base + 3;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0_58_discardInt_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0_58_discardInt_58_0,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65865 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
@@ -1891,7 +1891,7 @@ var _idris__123_APPLY0_125_$65865 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_95_lam0_125_,[oldbase]);
+  i$CALL(_idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_95_lam0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65866 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
@@ -1899,7 +1899,7 @@ var _idris__123_APPLY0_125_$65866 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_95_lam1_125_,[oldbase]);
+  i$CALL(_idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_95_lam1_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65867 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,4);
@@ -2064,7 +2064,7 @@ var _idris__123_APPLY0_125_$65890 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Scenes_46_Main_46__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95__95__95__95__95_src_95__95_Scenes_95__95_MainScene_95__95_idr_95_49_95_19_95_case_95_lam0_125_,[oldbase]);
+  i$CALL(_idris_Scenes_46_Main_46__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_src_95__95_Scenes_95__95_Main_95__95_Scene_95__95_idr_95_49_95_19_95_case_95_lam0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65891 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
@@ -2072,7 +2072,7 @@ var _idris__123_APPLY0_125_$65891 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Scenes_46_Main_46__123_initMainSceneWith0_125_,[oldbase]);
+  i$CALL(_idris_Scenes_46_Main_46__123_initSceneWith0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65892 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,5);
@@ -2257,7 +2257,7 @@ var _idris__123_APPLY0_125_$65917 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0_95_lam0_125_,[oldbase]);
+  i$CALL(_idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0_95_lam0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65918 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,2);
@@ -2272,13 +2272,13 @@ var _idris__123_APPLY0_125_$65919 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam0_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65920 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam1_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam1_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65921 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
@@ -2286,43 +2286,43 @@ var _idris__123_APPLY0_125_$65921 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam2_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam2_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65922 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam3_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam3_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65923 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam4_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam4_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65924 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam5_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam5_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65925 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam6_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam6_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65926 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam7_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65927 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_context_58_0_95_lam0_125_,[oldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_context_58_0_95_lam0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65928 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,6);
@@ -2359,14 +2359,14 @@ var _idris__123_EVAL0_125_ = function(oldbase){
     i$valstack_base = oldbase.addr;
   };
 }
-var _idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0_95_lam0_125_$0 = function(oldbase,myoldbase){
+var _idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0_95_lam0_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$ret;
   i$valstack[i$valstack_base + 3] = 16384;
   i$ret = new i$CON(65730,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65730,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0_95_lam0_125_ = function(oldbase){
+var _idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0_95_lam0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 2;
   i$valstack[i$valstack_base + 2] = undefined;
@@ -2375,8 +2375,8 @@ var _idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_M
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0_95_lam0_125_$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_getContext_58_0,[myoldbase]);
+  i$CALL(_idris__123_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0_95_lam0_125_$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_getContext_58_0,[myoldbase]);
 }
 var _idris__123_Main_46_step_58_step_39__58_0_95_lam0_125_$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
@@ -2448,7 +2448,7 @@ var _idris_Prelude_46_Functor_46__123_Prelude_46_Monad_46__64_Prelude_46_Functor
   i$CALL(_idris_Prelude_46_Functor_46__123_Prelude_46_Monad_46__64_Prelude_46_Functor_46_Functor_36_IO_39__32_ffi_58__33_map_58_0_95_lam0_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
 }
-var _idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_95_lam0_125_ = function(oldbase){
+var _idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_95_lam0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 2;
   i$valstack[i$valstack_base + 2] = undefined;
@@ -2457,7 +2457,16 @@ var _idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_M
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95__95__95__95__95_src_95__95_Scenes_95__95_MainScene_95__95_idr_95_49_95_19_95_case_95_lam0_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam0_125_ = function(oldbase){
+  var myoldbase = new i$POINTER();
+  i$valstack_top += 2;
+  i$valstack[i$valstack_base + 1] = undefined;
+  i$valstack[i$valstack_base + 2] = undefined;
+  i$ret = new i$CON(65893,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65893,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase.addr;
+}
+var _idris_Scenes_46_Main_46__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_src_95__95_Scenes_95__95_Main_95__95_Scene_95__95_idr_95_49_95_19_95_case_95_lam0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 3;
   i$valstack[i$valstack_base + 1] = undefined;
@@ -2467,16 +2476,7 @@ var _idris_Scenes_46_Main_46__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam0_125_ = function(oldbase){
-  var myoldbase = new i$POINTER();
-  i$valstack_top += 2;
-  i$valstack[i$valstack_base + 1] = undefined;
-  i$valstack[i$valstack_base + 2] = undefined;
-  i$ret = new i$CON(65893,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65893,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase.addr;
-}
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_context_58_0_95_lam0_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_context_58_0_95_lam0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 3;
   switch(i$valstack[i$valstack_base].tag){
@@ -2736,7 +2736,7 @@ var _idris_API_46_Web_46_HTML_46_HTMLElement_46__123_htmlElementFromPointer_95__
       break;
   };
 }
-var _idris_Scenes_46_Main_46__123_initMainSceneWith0_125_ = function(oldbase){
+var _idris_Scenes_46_Main_46__123_initSceneWith0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 4;
   switch(i$valstack[i$valstack_base + 1].tag){
@@ -2784,7 +2784,7 @@ var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0,[oldbase]);
 }
 var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26_95_13_95_case_95_lam0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -2792,7 +2792,7 @@ var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0,[oldbase]);
 }
 var _idris_IdrisScript_46__123_pack0_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -3087,7 +3087,7 @@ var _idris_Prelude_46_Applicative_46__123_Prelude_46_Monad_46__64_Prelude_46_App
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_95_lam1_125_ = function(oldbase){
+var _idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_95_lam1_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 5;
   i$valstack[i$valstack_base + 2] = undefined;
@@ -3100,7 +3100,7 @@ var _idris_Interfaces_46__123_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_M
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam1_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam1_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 1;
   i$ret = i$CON$65919;
@@ -3347,7 +3347,7 @@ var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0,[oldbase]);
 }
 var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26_95_13_95_case_95_lam1_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -3356,7 +3356,7 @@ var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0,[oldbase]);
 }
 var _idris_IdrisScript_46__123_pack1_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -3551,7 +3551,7 @@ var _idris__123_API_46_Web_46_HTML_46_Window_46_defaultWindow_58_maybeDocument_5
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam2_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam2_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 3;
   i$valstack[i$valstack_base + 2] = undefined;
@@ -3721,7 +3721,7 @@ var _idris__123_API_46_Web_46_HTML_46_Window_46_defaultWindow_58_maybeDocument_5
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam3_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam3_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 1;
   i$ret = new i$CON(65921,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65921,null);
@@ -3836,7 +3836,7 @@ var _idris_Main_46__123_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26
       i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
       i$SLIDE(2);
       i$valstack_top = i$valstack_base + 2;
-      i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0,[oldbase]);
+      i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0,[oldbase]);
       break;
     case 0:
       i$valstack[i$valstack_base + 1] = "Couldn\'t init main scene";
@@ -3887,7 +3887,7 @@ var _idris_API_46_WebGL_46_Context_46__123_webGlRenderingContextFromPointer_95_s
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam4_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam4_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 1;
   i$ret = i$CON$65922;
@@ -3957,7 +3957,7 @@ var _idris_API_46_WebGL_46_Context_46__123_webGlRenderingContextFromPointer_95_s
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam5_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam5_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 1;
   i$ret = i$CON$65923;
@@ -4125,7 +4125,7 @@ var _idris_API_46_WebGL_46_Context_46__123_webGlRenderingContextFromPointer_95_s
       i$valstack_base = oldbase.addr;
   };
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam6_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam6_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 3;
   i$valstack[i$valstack_base + 1] = undefined;
@@ -4183,7 +4183,7 @@ var _idris_Main_46__123_main6_125_ = function(oldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0,[oldbase]);
 }
 var _idris_IdrisScript_46__123_pack6_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -4252,7 +4252,7 @@ var _idris_API_46_WebGL_46_Context_46__123_webGlRenderingContextFromPointer_95_s
   i$CALL(_idris_API_46_WebGL_46_Context_46__123_webGlRenderingContextFromPointer_95_src_95__95_API_95__95_WebGL_95__95_Context_95__95_idr_95_74_95_10_95_case_95_lam6_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris_Prelude_46_Monad_46__62__62__61_,[myoldbase]);
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_$1 = function(oldbase,myoldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam7_125_$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 1] = i$ret;
   i$valstack[i$valstack_base + 2] = i$CON$65925;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
@@ -4261,7 +4261,7 @@ var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_$
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris__123_APPLY0_125_,[oldbase]);
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_$0 = function(oldbase,myoldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam7_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 1] = i$ret;
   i$valstack[i$valstack_base + 2] = "Could not get canvas";
   i$valstack[i$valstack_base + 2] = new i$CON(65665,[i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65665,null);
@@ -4270,10 +4270,10 @@ var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_$
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_$1,[oldbase,myoldbase]);
+  i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam7_125_$1,[oldbase,myoldbase]);
   i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
 }
-var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_ = function(oldbase){
+var _idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam7_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 6;
   switch(i$valstack[i$valstack_base].tag){
@@ -4324,7 +4324,7 @@ var _idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_ 
       myoldbase.addr = i$valstack_base;
       i$valstack_base = i$valstack_top;
       i$valstack_top += 4;
-      i$CALL(_idris__123_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95_lam7_125_$0,[oldbase,myoldbase]);
+      i$CALL(_idris__123_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_lam7_125_$0,[oldbase,myoldbase]);
       i$CALL(_idris_Prelude_46_Monad_46__62__62__61_,[myoldbase]);
       break;
   };
@@ -4420,7 +4420,7 @@ var _idris_Main_46__123_main7_125_ = function(oldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0,[oldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0,[oldbase]);
 }
 var _idris_IdrisScript_46__123_pack7_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -4526,7 +4526,7 @@ var _idris_Main_46__123_main9_125_ = function(oldbase){
       i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
       i$SLIDE(2);
       i$valstack_top = i$valstack_base + 2;
-      i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0,[oldbase]);
+      i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0,[oldbase]);
       break;
     case 0:
       i$valstack[i$valstack_base + 1] = "Couldn\'t init main scene";
@@ -4600,7 +4600,7 @@ var _idris_Main_46__123_main10_125_$0 = function(oldbase,myoldbase){
   i$valstack_base = i$valstack_top;
   i$valstack_top += 1;
   i$CALL(_idris_Main_46__123_main10_125_$1,[oldbase,myoldbase]);
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith,[myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith,[myoldbase]);
 }
 var _idris_Main_46__123_main10_125_ = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -6433,14 +6433,14 @@ var _idris_API_46_Web_46_HTML_46_HTMLElement_46_htmlElementFromPointer_58_maybeL
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0$1 = function(oldbase,myoldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_canvas_58_0$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
   i$valstack[i$valstack_base + 5] = i$CON$65926;
   i$ret = new i$CON(65892,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65892,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0$0 = function(oldbase,myoldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_canvas_58_0$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
   i$valstack[i$valstack_base + 5] = "canvas";
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 4];
@@ -6448,10 +6448,10 @@ var _idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0$0 = function(oldba
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_canvas_58_0$1,[oldbase,myoldbase]);
   i$CALL(_idris_API_46_Web_46_DOM_46_NonElementParentNode_46_getElementById,[myoldbase]);
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0 = function(oldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_canvas_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 5;
   i$valstack[i$valstack_base + 1] = undefined;
@@ -6461,17 +6461,17 @@ var _idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0 = function(oldbase
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 1;
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_elm_58_0,[myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_canvas_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_elm_58_0,[myoldbase]);
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_context_58_0$0 = function(oldbase,myoldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_context_58_0$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
   i$valstack[i$valstack_base + 5] = i$CON$65927;
   i$ret = new i$CON(65892,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65892,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_context_58_0 = function(oldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_context_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 5;
   i$valstack[i$valstack_base + 1] = undefined;
@@ -6481,18 +6481,18 @@ var _idris_Scenes_46_Main_46_initMainSceneWith_58_context_58_0 = function(oldbas
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 1;
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_context_58_0$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0,[myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_context_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_canvas_58_0,[myoldbase]);
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_elm_58_0$0 = function(oldbase,myoldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_elm_58_0$0 = function(oldbase,myoldbase){
   i$ret = new i$CON(0,[i$valstack[i$valstack_base + 1]],null,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Scenes_46_Main_46_initMainSceneWith_58_elm_58_0 = function(oldbase){
+var _idris_Scenes_46_Main_46_initSceneWith_58_elm_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 1;
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith_58_elm_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith_58_elm_58_0$0,[oldbase,myoldbase]);
   i$PROJECT(i$valstack[i$valstack_base],1,2);
 ;
 }
@@ -6535,7 +6535,7 @@ var _idris_IdrisScript_46_typeOf_58_ctrName_58_0 = function(oldbase){
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0_58_discardInt_58_0 = function(oldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0_58_discardInt_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 3;
   i$valstack[i$valstack_base + 3] = undefined;
@@ -6545,7 +6545,7 @@ var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Mai
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_getContext_58_0 = function(oldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_getContext_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 2;
   i$PROJECT(i$valstack[i$valstack_base + 1],2,2);
@@ -6553,7 +6553,7 @@ var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainSc
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0$0 = function(oldbase,myoldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 5] = i$ret;
   i$valstack[i$valstack_base + 6] = 1.0;
   i$valstack[i$valstack_base + 7] = 0.0;
@@ -6565,7 +6565,7 @@ var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainSc
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0 = function(oldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 8;
   i$valstack[i$valstack_base + 2] = undefined;
@@ -6577,8 +6577,8 @@ var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainSc
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_getContext_58_0,[myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_getContext_58_0,[myoldbase]);
 }
 var _idris_Prelude_46_Applicative_46_Prelude_46_Monad_46__64_Prelude_46_Applicative_46_Applicative_36_IO_39__32_ffi_58__33__60__42__62__58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
@@ -6591,7 +6591,7 @@ var _idris_Prelude_46_Applicative_46_Prelude_46_Monad_46__64_Prelude_46_Applicat
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0$1 = function(oldbase,myoldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 5] = i$ret;
   i$valstack[i$valstack_base + 6] = undefined;
   i$valstack[i$valstack_base + 7] = undefined;
@@ -6600,22 +6600,22 @@ var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Mai
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0$0 = function(oldbase,myoldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0$1,[oldbase,myoldbase]);
   i$CALL(_idris_API_46_Web_46_HTML_46_Window_46_requestAnimationFrame,[myoldbase]);
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0 = function(oldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 6;
   i$valstack[i$valstack_base + 2] = undefined;
   i$valstack[i$valstack_base + 3] = undefined;
   i$valstack[i$valstack_base + 4] = undefined;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_MainScene_58__33_requestFrame_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_FrameRequest_36_Scene_58__33_requestFrame_58_0$0,[oldbase,myoldbase]);
   i$PROJECT(i$valstack[i$valstack_base],5,2);
 ;
 }
@@ -6642,14 +6642,14 @@ var _idris_Prelude_46_Monad_46_Prelude_46_Monad_46__64_Prelude_46_Monad_46_Monad
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0$0 = function(oldbase,myoldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
   i$valstack[i$valstack_base + 5] = new i$CON(65866,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65866,null);
   i$ret = new i$CON(65892,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65892,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase.addr;
 }
-var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0 = function(oldbase){
+var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0 = function(oldbase){
   var myoldbase = new i$POINTER();
   i$valstack_top += 5;
   i$valstack[i$valstack_base + 1] = undefined;
@@ -6661,8 +6661,8 @@ var _idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainSc
   myoldbase.addr = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_MainScene_58__33_update_58_0_58_paint_58_0,[myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Interfaces_46_Scenes_46_Main_46__64_Interfaces_46_Updatable_36_Scene_58__33_update_58_0_58_paint_58_0,[myoldbase]);
 }
 var _idris_API_46_Web_46_DOM_46_Element_46_elementFromPointer_95__95__95__95__95_API_95__95_Web_95__95_DOM_95__95_Element_95__95_idr_95_37_95_31_95_case$2 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 5] = i$ret;
@@ -6953,28 +6953,7 @@ var _idris_Main_46_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26_95_1
   i$valstack_base = i$valstack_top;
   i$valstack_top += 1;
   i$CALL(_idris_Main_46_main_95__95__95__95__95_src_95__95_Main_95__95_idr_95_26_95_13_95_case$1,[oldbase,myoldbase]);
-  i$CALL(_idris_Scenes_46_Main_46_initMainSceneWith,[myoldbase]);
-}
-var _idris_Scenes_46_Main_46_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95__95__95__95__95_src_95__95_Scenes_95__95_MainScene_95__95_idr_95_49_95_19_95_case$1 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 4] = i$ret;
-  i$valstack[i$valstack_base + 5] = i$CON$65890;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 4];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 5];
-  i$SLIDE(2);
-  i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris__123_APPLY0_125_,[oldbase]);
-}
-var _idris_Scenes_46_Main_46_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95__95__95__95__95_src_95__95_Scenes_95__95_MainScene_95__95_idr_95_49_95_19_95_case$0 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 4] = i$ret;
-  i$valstack[i$valstack_base + 5] = "Could not get canvas";
-  i$valstack[i$valstack_base + 5] = new i$CON(65665,[i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65665,null);
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 4];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 5];
-  myoldbase.addr = i$valstack_base;
-  i$valstack_base = i$valstack_top;
-  i$valstack_top += 2;
-  i$CALL(_idris_Scenes_46_Main_46_Scenes_46_Main_46_initMainSceneWith_58_canvas_58_0_95__95__95__95__95_src_95__95_Scenes_95__95_MainScene_95__95_idr_95_49_95_19_95_case$1,[oldbase,myoldbase]);
-  i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
+  i$CALL(_idris_Scenes_46_Main_46_initSceneWith,[myoldbase]);
 }
 var _idris_IdrisScript_46_typeOf_95_IdrisScript_95__95_idr_95_46_95_8_95_case$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
@@ -7356,6 +7335,27 @@ var _idris_API_46_WebGL_46_Context_46_webGlRenderingContextFromPointer_95_src_95
   i$CALL(_idris_API_46_WebGL_46_Context_46_webGlRenderingContextFromPointer_95_src_95__95_API_95__95_WebGL_95__95_Context_95__95_idr_95_74_95_10_95_case_95_src_95__95_API_95__95_WebGL_95__95_Context_95__95_idr_95_75_95_31_95_case$1,[oldbase,myoldbase]);
   i$valstack[i$valstack_base + 32] = i$valstack[i$valstack_base + 3].args[0];
   i$valstack[i$valstack_base + 32] = i$valstack[i$valstack_base + 32];
+}
+var _idris_Scenes_46_Main_46_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_src_95__95_Scenes_95__95_Main_95__95_Scene_95__95_idr_95_49_95_19_95_case$1 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 4] = i$ret;
+  i$valstack[i$valstack_base + 5] = i$CON$65890;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 5];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris__123_APPLY0_125_,[oldbase]);
+}
+var _idris_Scenes_46_Main_46_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_src_95__95_Scenes_95__95_Main_95__95_Scene_95__95_idr_95_49_95_19_95_case$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 4] = i$ret;
+  i$valstack[i$valstack_base + 5] = "Could not get canvas";
+  i$valstack[i$valstack_base + 5] = new i$CON(65665,[i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65665,null);
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 5];
+  myoldbase.addr = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 2;
+  i$CALL(_idris_Scenes_46_Main_46_Scenes_46_Main_46_initSceneWith_58_canvas_58_0_95_src_95__95_Scenes_95__95_Main_95__95_Scene_95__95_idr_95_49_95_19_95_case$1,[oldbase,myoldbase]);
+  i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
 }
 var i$CON$0 = new i$CON(0,[],null,null);
 var i$CON$1 = new i$CON(1,[],null,null);
