@@ -39,5 +39,17 @@
         upgrading to a <a href="http://browsehappy.com">different browser</a>.
       </canvas>
     </main>
+    <div style="display:hidden">
+      <img id="MainSceneTiles" src="src/Scenes/Main/assets/tiles.png">
+      <script id="MainSceneMap" src="src/Scenes/Main/assets/map.json"></script>
+      <script id="vertexShader"
+              type="x-shader/x-vertex"
+              src="src/shaders/2d.vert">
+      </script>
+      <script id="fragmentShader"
+              type="x-shader/x-fragment"
+              src="src/shaders/2d.frag">
+      </script>
+    </div>
   </body>
 </html>
